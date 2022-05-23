@@ -147,6 +147,7 @@ isXT = true;
   if (apiUrl.substr(apiUrl.length - 1, apiUrl.length) !== '/') {
     apiUrl = apiUrl + '/';
   }
+  console.log("env.js->WINDOW.APIURL/: " + window.apiUrl);
 
   path = getPath();
 
