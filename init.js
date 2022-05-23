@@ -106,7 +106,7 @@ var ie = (function() {
       // window.path + 'libs/goldenlayout/goldenlayout-light-theme.css'
     ]);
 
-    console.log("WINDOW.APIURL: " + window.apiUrl)
+    console.log("***WINDOW.APIURL***: " + window.apiUrl)
 
     if (window.apiUrl.substr(window.apiUrl.length - 'arcgis-js-api/'.length,
       'arcgis-js-api/'.length) === 'arcgis-js-api/') {
