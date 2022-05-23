@@ -109,8 +109,6 @@ isXT = true;
   //////////////////////////////////////////////////////////////
   allCookies = getAllCookies();
 
-  console.log("env.js->WINDOW.APIURL: " + window.apiUrl);
-
   if (queryObject.apiurl) {
     if(!checkApiUrl(queryObject.apiurl)){
       console.error('?apiurl must point to an ULR that is in the app or in esri.com/arcgis.com domain.');
@@ -120,12 +118,9 @@ isXT = true;
   }
   window.appInfo = {isRunInPortal: !isXT};
   if (!apiUrl) {
-    console.log("env.js->debug 1: " + window.apiUrl);
     if (isXT) {
       apiUrl = 'https://js.arcgis.com/' + apiVersion;
-      console.log("env.js->debug 2: " + window.apiUrl);
     } else {
-      console.log("env.js->debug 3: " + window.apiUrl);
       var portalUrl = getPortalUrlFromLocation();
       if (portalUrl.indexOf('.arcgis.com') > -1) {
         if(portalUrl.indexOf('devext.arcgis.com') > -1){
@@ -147,7 +142,6 @@ isXT = true;
   if (apiUrl.substr(apiUrl.length - 1, apiUrl.length) !== '/') {
     apiUrl = apiUrl + '/';
   }
-  console.log("env.js->WINDOW.APIURL/: " + window.apiUrl);
 
   path = getPath();
 
