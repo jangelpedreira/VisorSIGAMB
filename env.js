@@ -86,7 +86,7 @@ var
 
 /////Builder server will remove this line's comment, so set isXT flag to true
 
-isXT = true;
+//isXT = true;
 
 /////////////////////////////////////
 
@@ -134,7 +134,6 @@ isXT = true;
         // apiUrl = 'https://js.arcgis.com/' + apiVersion;
       } else {
         apiUrl = portalUrl + 'jsapi/jsapi/';
-        console.log("env.js->debug 4: " + window.apiUrl);
       }
     }
   }
