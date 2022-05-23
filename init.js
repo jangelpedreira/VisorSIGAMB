@@ -55,6 +55,8 @@ var ie = (function() {
     resources.push(weinreUrl);
   }
 
+  window.apiUrl = 'https://js.arcgis.com/3.40';
+
   if (!window.apiUrl) {
     console.error('no apiUrl.');
   } else if (!window.path) {
@@ -83,9 +85,6 @@ var ie = (function() {
     };
 
     setLocale();
-    
-    window.apiUrl = 'https://js.arcgis.com/3.40';
-
 
     if(window.isRTL){
       dojoConfig.has['dojo-bidi'] = true;
@@ -107,7 +106,7 @@ var ie = (function() {
       // window.path + 'libs/goldenlayout/goldenlayout-light-theme.css'
     ]);
 
-    console.log("WINDOW.APIURL" + window.apiUrl)
+    console.log("WINDOW.APIURL: " + window.apiUrl)
 
     if (window.apiUrl.substr(window.apiUrl.length - 'arcgis-js-api/'.length,
       'arcgis-js-api/'.length) === 'arcgis-js-api/') {
