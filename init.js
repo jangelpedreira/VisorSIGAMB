@@ -55,7 +55,7 @@ var ie = (function() {
     resources.push(weinreUrl);
   }
 
-  window.apiUrl = 'https://js.arcgis.com/3.40/';
+  //window.apiUrl = 'https://js.arcgis.com/3.40/';
 
   if (!window.apiUrl) {
     console.error('no apiUrl.');
